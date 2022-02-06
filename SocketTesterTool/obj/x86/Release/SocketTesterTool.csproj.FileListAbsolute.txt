@@ -1,0 +1,14 @@
+C:\Users\HP\AppData\Local\Temporary Projects\SocketTesterTool\bin\Release\SocketTesterTool.exe
+C:\Users\HP\AppData\Local\Temporary Projects\SocketTesterTool\bin\Release\SocketTesterTool.pdb
+C:\Users\HP\AppData\Local\Temporary Projects\SocketTesterTool\obj\x86\Release\SocketTesterTool.FrmSocketTestTool.resources
+C:\Users\HP\AppData\Local\Temporary Projects\SocketTesterTool\obj\x86\Release\SocketTesterTool.Properties.Resources.resources
+C:\Users\HP\AppData\Local\Temporary Projects\SocketTesterTool\obj\x86\Release\SocketTesterTool.csproj.GenerateResource.Cache
+C:\Users\HP\AppData\Local\Temporary Projects\SocketTesterTool\obj\x86\Release\SocketTesterTool.exe
+C:\Users\HP\AppData\Local\Temporary Projects\SocketTesterTool\obj\x86\Release\SocketTesterTool.pdb
+C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\bin\Release\SocketTesterTool.exe
+C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\bin\Release\SocketTesterTool.pdb
+C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Release\SocketTesterTool.FrmSocketTestTool.resources
+C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Release\SocketTesterTool.Properties.Resources.resources
+C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Release\SocketTesterTool.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Release\SocketTesterTool.exe
+C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Release\SocketTesterTool.pdb
