@@ -252,7 +252,9 @@ namespace SocketTesterTool
             }
         }//endof 
 
-
-
+        private void FrmSocketTestTool_Load(object sender, EventArgs e)
+        {
+            Text = "Socket Test Tool";
+        }
     }
 }

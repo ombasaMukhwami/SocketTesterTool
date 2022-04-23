@@ -244,6 +244,7 @@
             this.Name = "FrmSocketTestTool";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Socket Test Tool";
+            this.Load += new System.EventHandler(this.FrmSocketTestTool_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

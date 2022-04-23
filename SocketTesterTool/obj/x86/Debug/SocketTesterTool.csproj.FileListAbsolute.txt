@@ -12,3 +12,12 @@ C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\bin\Debug\Sock
 C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.FrmSocketTestTool.resources
 C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.Properties.Resources.resources
 C:\Users\HP\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.GenerateResource.Cache
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\bin\Debug\SocketTesterTool.exe
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\bin\Debug\SocketTesterTool.pdb
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.AssemblyReference.cache
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.FrmSocketTestTool.resources
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.Properties.Resources.resources
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.GenerateResource.cache
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.CoreCompileInputs.cache
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.exe
+C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.pdb
