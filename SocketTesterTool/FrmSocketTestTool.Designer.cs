@@ -75,7 +75,7 @@
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(161, 21);
             this.txtPort.TabIndex = 3;
-            this.txtPort.Text = "9990";
+            this.txtPort.Text = "7015";
             // 
             // label2
             // 
@@ -118,8 +118,8 @@
             this.txtsenddata.Size = new System.Drawing.Size(699, 116);
             this.txtsenddata.TabIndex = 7;
             this.txtsenddata.Text = "58588e004c08686480416907742111201318508012720303bb09c200290090f8067981b07fffa00a2" +
-                "90089501618000000160001383932353430323131383432333839313735303800050002004e00440" +
-                "d";
+    "90089501618000000160001383932353430323131383432333839313735303800050002004e00440" +
+    "d";
             // 
             // label4
             // 
