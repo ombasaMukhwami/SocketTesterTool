@@ -43,7 +43,7 @@
             this.btnConverToHex = new System.Windows.Forms.Button();
             this.btnUdp = new System.Windows.Forms.Button();
             this.btnTcp = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtReceived = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnConnectSocket = new System.Windows.Forms.Button();
             this.chkReply = new System.Windows.Forms.CheckBox();
@@ -117,9 +117,8 @@
             this.txtsenddata.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtsenddata.Size = new System.Drawing.Size(699, 116);
             this.txtsenddata.TabIndex = 7;
-            this.txtsenddata.Text = "58588e004c08686480416907742111201318508012720303bb09c200290090f8067981b07fffa00a2" +
-    "90089501618000000160001383932353430323131383432333839313735303800050002004e00440" +
-    "d";
+            this.txtsenddata.Text = "7e0200002e0000010091823143000000000000000000020d2802352e04071e0000013723012919581" +
+    "6000000000000001809c80000000007000000db7e";
             // 
             // label4
             // 
@@ -180,14 +179,14 @@
             this.btnTcp.UseVisualStyleBackColor = true;
             this.btnTcp.Click += new System.EventHandler(this.btnTcp_Click);
             // 
-            // textBox1
+            // txtReceived
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 163);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(699, 42);
-            this.textBox1.TabIndex = 13;
+            this.txtReceived.Location = new System.Drawing.Point(110, 163);
+            this.txtReceived.Multiline = true;
+            this.txtReceived.Name = "txtReceived";
+            this.txtReceived.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtReceived.Size = new System.Drawing.Size(699, 42);
+            this.txtReceived.TabIndex = 13;
             // 
             // errorProvider1
             // 
@@ -221,7 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 480);
             this.Controls.Add(this.btnConnectSocket);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtReceived);
             this.Controls.Add(this.btnTcp);
             this.Controls.Add(this.btnUdp);
             this.Controls.Add(this.btnConverToHex);
@@ -266,7 +265,7 @@
         private System.Windows.Forms.Button btnConverToHex;
         private System.Windows.Forms.Button btnUdp;
         private System.Windows.Forms.Button btnTcp;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtReceived;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button btnConnectSocket;
         private System.Windows.Forms.CheckBox chkReply;

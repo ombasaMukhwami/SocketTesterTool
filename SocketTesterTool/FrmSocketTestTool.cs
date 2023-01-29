@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net.Sockets;
 using System.Net;
+using System.Threading;
 
 namespace SocketTesterTool
 {
@@ -17,6 +18,7 @@ namespace SocketTesterTool
         private Socket _clientSocketTcp;// = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
         private Socket _ListenerSocket;
         private Socket _clientSocketUdp;// = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+        private delegate void Connected();
         public FrmSocketTestTool()
         {
             InitializeComponent();
@@ -36,7 +38,10 @@ namespace SocketTesterTool
             this.PushDataToNavigate(stringToPushToNavigate, false);
             btnUdp.Enabled = !isInprogress;
         }
-
+        private void SendingData()
+        {
+            btnTcp.Enabled = !isInprogress;
+        }
         private void btnTcp_Click(object sender, EventArgs e)
         {
             if (this.isInprogress)
@@ -100,7 +105,7 @@ namespace SocketTesterTool
                 this.isInprogress = false;
                 if (_clientSocketTcp == null || (isTcp && !_clientSocketTcp.Connected))
                 {
-                    DisconnectSoocket();
+                    DisconnectSocket();
                 }
             }
 
@@ -129,6 +134,7 @@ namespace SocketTesterTool
                 this.writeEventMsg(string.Format("Send : {0} >", DateTime.Now) + str);
                 stream.Write(byteArray, 0, byteArray.Length);
                 this.writeEventMsg(string.Format("Recived : {0} <", DateTime.Now) + str);
+
                 this.isInprogress = false;
                 stream.Close();
                 tcpClient.Close();
@@ -201,14 +207,21 @@ namespace SocketTesterTool
                 errorProvider1.SetError(txtServerIp, "*");
         }
 
-        private void DisconnectSoocket()
+        private void DisconnectSocket()
         {
             btnConnectSocket.Text = "Connect";
             btnConnectSocket.ForeColor = Color.Black;
             _clientSocketTcp = null;
             btnTcp.Enabled = false;
         }
-
+        private void ConnectSocket()
+        {
+            btnConnectSocket.Enabled = false;
+            btnTcp.Enabled = true;
+            btnConnectSocket.Text = "Disconnect";
+            btnConnectSocket.ForeColor = Color.Green;
+            btnConnectSocket.Enabled = true;
+        }
         private void btnConnectSocket_Click(object sender, EventArgs e)
         {
             if (_clientSocketTcp == null)
@@ -218,39 +231,42 @@ namespace SocketTesterTool
             {
                 if (MessageBox.Show("Do you want to Disconnect", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    DisconnectSoocket();
+                    Connected connected = new Connected(DisconnectSocket);
+                    this.Invoke(connected);
                 }
             }
             else
             {
-                int attemps = 0;
-                while (!_clientSocketTcp.Connected)
+                try
                 {
-                    try
-                    {
-                        attemps++;
-                        btnConnectSocket.Enabled = false;
-                        _clientSocketTcp.Connect(IPAddress.Parse(txtServerIp.Text), int.Parse(txtPort.Text));
-          
-                        btnTcp.Enabled = true;
-                        btnConnectSocket.Text = "Disconnect";
-                        btnConnectSocket.ForeColor = Color.Green;
-
-                    }
-                    catch (SocketException ex)
-                    {
-                        btnTcp.Enabled = false;
-                        if (attemps > 5)
-                        {
-                            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            break;
-                        }
-
-                    }
+                    _clientSocketTcp.Connect(new IPEndPoint(IPAddress.Parse(txtServerIp.Text.Trim()), int.Parse(txtPort.Text.Trim())));
+                    Connected connected = new Connected(ConnectSocket);
+                    this.Invoke(connected);
                 }
-                btnConnectSocket.Enabled = true;
+                catch (SocketException ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
             }
         }//endof 
+
+        private void ConnectCallBack(IAsyncResult ar)
+        {
+            try
+            {
+                _clientSocketTcp.EndConnect(ar);
+                Connected connected = new Connected(ConnectSocket);
+                this.Invoke(connected);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Connected connected = new Connected(DisconnectSocket);
+                this.Invoke(connected);
+            }
+        }
 
         private void FrmSocketTestTool_Load(object sender, EventArgs e)
         {
