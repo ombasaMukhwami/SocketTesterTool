@@ -21,3 +21,14 @@ C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.c
 C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.CoreCompileInputs.cache
 C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.exe
 C:\Sourcesafe\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.pdb
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\bin\Debug\SocketTesterTool.exe.config
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\bin\Debug\SocketTesterTool.exe
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.AssemblyReference.cache
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.SuggestedBindingRedirects.cache
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.FrmSocketTestTool.resources
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.Properties.Resources.resources
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.GenerateResource.cache
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.csproj.CoreCompileInputs.cache
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.exe
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\obj\x86\Debug\SocketTesterTool.pdb
+C:\Users\guto\Desktop\Development\SocketTesterTool\SocketTesterTool\bin\Debug\SocketTesterTool.pdb
